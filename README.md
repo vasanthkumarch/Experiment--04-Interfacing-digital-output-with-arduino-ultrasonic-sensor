@@ -12,52 +12,32 @@ To interface an FSR(force sensitive resistor) and scale the output voltage obtai
 
 
 ### THEORY: 
-FSRs are basically a resistor that changes its resistive value (in ohms Ω) depending on how much it is pressed. These sensors are fairly low cost, and easy to use. They also vary some from sensor to sensor perhaps 10%. FSR's resistance changes as more pressure is applied. When there is no pressure, the sensor looks like an infinite resistor (open circuit), as the pressure increases, the resistance goes down. This graph indicates approximately the resistance of the sensor at different force measurements.
- 
+The HC-SR04 ultrasonic sensor uses SONAR to determine the distance of an object just like the bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package from 2 cm to 400 cm or 1” to 13 feet.
 
-![image](https://user-images.githubusercontent.com/36288975/163532939-d6888ae1-4068-4d83-86a7-fc4c32d5179e.png)
+The operation is not affected by sunlight or black material, although acoustically, soft materials like cloth can be difficult to detect. It comes complete with ultrasonic transmitter and receiver module.
+Technical Specifications
+Power Supply − +5V DC
+Quiescent Current − <2mA
+Working Current − 15mA
+Effectual Angle − <15°
+Ranging Distance − 2cm – 400 cm/1″ – 13ft
+Resolution − 0.3 cm
+Measuring Angle − 30 degree
 
-### FIGURE 01 GRAPH OF FORCE vs RESISTANCE **
+The ultrasonic sensor uses sonar to determine the distance to an object. Here’s what happens:
 
+The ultrasound transmitter (trig pin) emits a high-frequency sound (40 kHz).
+The sound travels through the air. If it finds an object, it bounces back to the module.
+The ultrasound receiver (echo pin) receives the reflected sound (echo).
+The time between the transmission and reception of the signal allows us to calculate the distance to an object. This is possible because we know the sound’s velocity in the air. Here’s the formula:
 
+distance to an object = ((speed of sound in the air)*time)/2
+speed of sound in the air at 20ºC (68ºF) = 343m/s
 
-
-![image](https://user-images.githubusercontent.com/36288975/163532957-82d57567-a1c3-48c5-8a87-7ea66d6fca49.png)
-
-
-
-
-### FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE  
-
-FSRs are often a polymer with conductive material silk-screened on. That means they're plastic and the connection tab is crimped on somewhat delicate material. The best way to connect to these is to simply plug them into a breadboard.
-
-The easiest way to measure a resistive sensor is to connect one end to power and the other to a pull-down resistor to ground. Then the point between the fixed pull down resistor and the variable FSR resistor is connected to the analog input of a microcontroller such as an Arduino The way this works is that as the resistance of the FSR decreases, the total resistance of the FSR and the pull down resistor decreases from about 100Kohm to 10Kohm. That means that the current flowing through both resistors increases which in turn causes the voltage across the fixed 10K resistor to increase.
-
- ![image](https://user-images.githubusercontent.com/36288975/163532972-2b909551-12c9-485d-adb1-d1e988d557bd.png)
-
-### TABLE -01 FORCE AND OUTPUT VOLTAGES**
-	
-  Table -01 indicates the approximate analog voltage based on the sensor force/resistance w/a 5V supply and 10K pull down resistor.
-
-### Vo = Vcc ( R / (R + FSR) )								Eq-01
-
-****Where R= 1KΩ in this experiment 
-****That is, the voltage is proportional to the inverse of the FSR resistance.
+### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
 
 
-
-
-
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/36288975/163532979-a2a5cb5c-f495-442c-843e-bebb82737a35.png)
-
-
-
-### FIGURE-03 CIRCUIT DIAGRAM
+![image](https://user-images.githubusercontent.com/36288975/166430594-5adb4ca9-5a42-4781-a7e6-7236b3766a85.png)
 
 
 
@@ -76,7 +56,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 ### PROGRAM 
 
-### Distance vs mearement table 
+### Distance vs measurement table 
 
 
 
