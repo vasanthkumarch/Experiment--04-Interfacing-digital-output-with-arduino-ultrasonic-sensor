@@ -56,7 +56,28 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### PROGRAM 
 
+
+
+
+
+
 ### Distance vs measurement table 
+
+			
+ 
+			
+			
+			
+
+![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
+
+			
+			
+			
+			
+			
+			Average error = sum/ number of readings 
+ 
 
 
 
