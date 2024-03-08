@@ -1,5 +1,9 @@
-# EXPERIMENT-NO--05-Distance measurement using Ultrasonic sensor
+# EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
+ ###  DATE: 
 
+###  NAME: 
+###  ROLL NO :
+###  DEPARTMENT:
 ## AIM: 
 To interface an ultrasonic pair and measure the distance in centimeters , calculate the error
  
